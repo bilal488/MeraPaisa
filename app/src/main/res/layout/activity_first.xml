@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context="com.example.bilal488.merapaisa.FirstActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewWtMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewLogo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Welcome to MeraPaisa App"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonAlreadyAccount"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWtMP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/darker_gray"
+        android:text="I ALREADY HAVE AN ACCOUNT"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewDontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAlreadyAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Don't hane an account?"
+        android:textSize="18sp" />
+
+    <view
+        class="android.support.design.internal.BaselineLayout"
+        id="@+id/viewL"
+        layout_alignTop="@+id/textView3"
+        layout_toLeftOf="@+id/textViewWtMP"
+        layout_toStartOf="@+id/textViewWtMP"
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/textViewDontHaveAccount"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/imageViewLogo2"
+        android:layout_toStartOf="@+id/imageViewLogo2"
+        android:background="@android:color/darker_gray" />
+
+    <view
+        class="android.support.design.internal.BaselineLayout"
+        id="@+id/viewR"
+        layout_alignTop="@+id/textView3"
+        layout_toLeftOf="@+id/textViewWtMP"
+        layout_toStartOf="@+id/textViewWtMP"
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/textViewDontHaveAccount"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageViewLogo2"
+        android:layout_toRightOf="@+id/imageViewLogo2"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonNewAccount"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDontHaveAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="OPEN NEW ACCOUNT" />
+</RelativeLayout>

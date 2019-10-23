@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.example.bilal488.merapaisa.ElectricityFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Spinner
+        android:id="@+id/spinnerElectricityBill"
+        style="@android:style/Widget.DeviceDefault.ActionBar.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutElectricityBillConsumerNumber"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerElectricityBill"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextElectricityBillConsumerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumer Number"
+            android:inputType="text|numberSigned"
+            android:maxLength="11"
+            tools:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonElectricityGetBill"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutElectricityBillConsumerNumber"
+        android:layout_marginTop="30dp"
+        android:text="GET BILL" />
+
+</RelativeLayout>

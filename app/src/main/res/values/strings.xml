@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MeraPaisa</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">MeraPaisa</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_transaction_report">TransactionReportActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_money_transfer">MoneyTransferActivity</string>
+    <string name="title_activity_bill_payments">BillPaymentsActivity</string>
+</resources>

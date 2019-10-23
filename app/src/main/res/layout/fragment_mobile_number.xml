@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.example.bilal488.merapaisa.MobileNumberFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutReceiverMobileAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextReceiverMobileAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Mobile Account Number"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutMobileAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutReceiverMobileAccountNumber"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextMobileAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount(0 to 50000)"
+            android:inputType="phone"
+            android:maxLength="5" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonMobileTransfer"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutMobileAmount"
+        android:layout_marginTop="30dp"
+        android:text="TRANSFER" />
+
+</RelativeLayout>

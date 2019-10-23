@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bilal488.merapaisa.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/textViewRS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCurrentBalance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="RS.0.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewCurrentBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Current Balance"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/relativeLayout2">
+
+        <view
+            class="android.support.design.internal.BaselineLayout"
+            id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/textView800000"
+            android:layout_toEndOf="@+id/textViewRemainingLimits"
+            android:layout_toRightOf="@+id/textViewRemainingLimits"
+            android:background="@android:color/darker_gray" />
+
+        <view
+            class="android.support.design.internal.BaselineLayout"
+            id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/textViewMonthly"
+            android:layout_toLeftOf="@+id/textViewRemainingLimits"
+            android:layout_toStartOf="@+id/textViewRemainingLimits"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView800000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView80000"
+            android:layout_alignBottom="@+id/textView80000"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textViewRemainingLimits"
+            android:layout_toRightOf="@+id/textViewRemainingLimits"
+            android:text="RS.800,000(800,000)"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView80000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView50000"
+            android:layout_alignBottom="@+id/textView50000"
+            android:layout_centerHorizontal="true"
+            android:text="RS.80,000(80,000)"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView50000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="12dp"
+            android:text="RS.50,000(50,000)"
+            android:textSize="10sp"
+            android:layout_below="@+id/textViewDaily"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewYearly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yearly"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/textViewMonthly"
+            android:layout_toRightOf="@+id/textViewRemainingLimits"
+            android:layout_toEndOf="@+id/textViewRemainingLimits"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_alignTop="@+id/textViewMonthly" />
+
+        <TextView
+            android:id="@+id/textViewMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textViewDaily"
+            android:layout_alignBottom="@+id/textViewDaily"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:text="Daily"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewRemainingLimits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Remaining Limits" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:id="@+id/imageViewPayments"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            app:srcCompat="@drawable/payment" />
+
+        <ImageView
+            android:id="@+id/imageViewMoneyTransfer"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            app:srcCompat="@drawable/money_transfer" />
+
+        <ImageView
+            android:id="@+id/imageVieweasyload"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            app:srcCompat="@drawable/mobile_load" />
+
+        <ImageView
+            android:id="@+id/imageViewBillPayment"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            app:srcCompat="@drawable/bill_payment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+</RelativeLayout>

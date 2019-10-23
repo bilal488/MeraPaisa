@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.example.bilal488.merapaisa.BankAccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Spinner
+        android:id="@+id/spinnerBanksNames"
+        style="@android:style/Widget.DeviceDefault.ActionBar.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutReceiverBankAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutBankAmount"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextReceiverBankAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's Mobile Number"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutBankNumber"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerBanksNames"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextBankNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number(123456)"
+            android:inputType="text|numberSigned"
+            android:maxLength="6"
+            tools:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayoutBankAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutBankNumber"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/EditTextBankAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount(0 to 15000)"
+            android:inputType="phone"
+            android:maxLength="5" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonBankTransfer"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextInputLayoutReceiverBankAccountNumber"
+        android:layout_marginTop="30dp"
+        android:text="TRANSFER" />
+
+</RelativeLayout>
